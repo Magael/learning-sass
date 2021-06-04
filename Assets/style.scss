@@ -1,0 +1,59 @@
+
+$myFont: Helvetica, sans-serif;
+$myColor: red;
+$myFontSize: 18px;
+$myWidth: 680px;
+
+body {
+  font-family: $myFont;
+  font-size: $myFontSize;
+  color: $myColor;
+}
+nav {
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    li {
+      display: inline-block;
+    }
+    a {
+      display: block;
+      padding: 6px 12px;
+      text-decoration: none;
+      color: $myColor;
+    }
+  }
+
+#small {
+  width: $myWidth;
+}
+#medium{
+    $myColor:green;
+    color:$myColor
+}@mixin important-text {
+  color: red;
+  font-size: 25px;
+  font-weight: bold;
+  border: 1px solid blue;
+}
+
+#large {
+  @include important-text;
+  background-color: green;
+}
+@media only screen and (min-width: 768px) {
+    body {
+      background-color: blue;
+    }
+    #small{
+        display:none
+    }
+    #medium{
+        display:none;
+        }
+    #large{
+        font-size: 50px;
+    }
+  }
