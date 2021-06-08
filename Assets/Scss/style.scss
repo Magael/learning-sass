@@ -5,6 +5,7 @@
     width: 100%;
   }
 }*/
+
 $myFont: 'Roboto', sans-serif;
 $myFontSize: 25px;
 
@@ -21,9 +22,11 @@ body {
 .date {
   position: absolute;
 }
+
   .image {
     width: 360px;
     height: 640px;
+    object-fit: contain;
     /*max-width: 100%;*/
     transition: transform 0.2s;
     overflow: hidden;
@@ -66,7 +69,9 @@ body {
             font-size: 20px;
           }
         p {
-            text-align: center;
+            width: 360px;
+            /*padding-right: 45px;*/
+            text-align: justify;
             font-size: 15px;
             color: grey;
             visibility: hidden;
@@ -91,19 +96,24 @@ body {
           /*align-items: center;*/
         }
 
-  .container .text {
+  .container {
     transition: transform 0.2s ease-in-out;
   }
-  .container .text:hover {
-    transform: translate3d(0px, -50px, 0px);
+  .container:hover {
+    
+    & .text {transform: translate3d(0px, -50px, 0px);
+    }
+
+    & .image {
+      /*object-fit: contain;*/
+      transform: scale(1.5);
+      opacity: 0.2;
+      }
 
     & p {
       visibility: visible;
     }
-    & .image {
-      transform: scale(1.5);
-      opacity: 0.2;
-    }
+    
   }
       
       

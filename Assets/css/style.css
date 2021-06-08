@@ -22,6 +22,7 @@ body {
 .image {
   width: 360px;
   height: 640px;
+  object-fit: contain;
   /*max-width: 100%;*/
   transition: transform 0.2s;
   overflow: hidden;
@@ -67,7 +68,9 @@ h2 {
 }
 
 p {
-  text-align: center;
+  width: 360px;
+  /*padding-right: 45px;*/
+  text-align: justify;
   font-size: 15px;
   color: grey;
   visibility: hidden;
@@ -92,17 +95,18 @@ li {
   /*align-items: center;*/
 }
 
-.container .text {
+.container {
   transition: transform 0.2s ease-in-out;
 }
 
-.container .text:hover {
+.container:hover .text {
   transform: translate3d(0px, -50px, 0px);
 }
-.container .text:hover p {
-  visibility: visible;
-}
-.container .text:hover .image {
+.container:hover .image {
+  /*object-fit: contain;*/
   transform: scale(1.5);
   opacity: 0.2;
+}
+.container:hover p {
+  visibility: visible;
 }/*# sourceMappingURL=style.css.map */
