@@ -1,4 +1,9 @@
 # learning-sass
+
+## Project done during BECODE learning process
+
+https://magael.github.io/learning-sass/index.html
+
 Create the repository: learning-sass
 Create a basic html file : index.html, just so we have something to play with.
 Create a folder and call it assets : it will contain all static files necessary for the visual look of the interface you are going to create. Images, css, javascript, fonts ...
@@ -8,4 +13,4 @@ Make sure that your html file contains a <link rel="stylesheet" ... > refering t
 
 date: 
 
-https://magael.github.io/learning-sass/index.html
+
